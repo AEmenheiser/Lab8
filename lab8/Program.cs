@@ -9,10 +9,10 @@ namespace Lab8
     class Program
     {
         static void Main(string[] args)
-        {   // Create a dictionary to hold information on students.
+        {   
             Dictionary<int, Student> studentInfo = new Dictionary<int, Student>();
 
-            // Instantiate student objects and add them to dictionary
+            
             studentInfo.Add(1, new Student("Hilary", "Paris", "Tuna"));
             studentInfo.Add(2, new Student("Frank", "Detroit", "Salad"));
             studentInfo.Add(3, new Student("Billy", "Buenos Aires", "French Fries"));
@@ -24,7 +24,7 @@ namespace Lab8
             studentInfo.Add(9, new Student("Henry", "LA", "Fried Rice"));
             studentInfo.Add(10, new Student("Tara", "Dallas", "Tacos"));
 
-            // Prompt user to enter student id number
+            
             int userInput;
             Console.WriteLine("Welcome to our C# class.");
         Start:
@@ -57,7 +57,7 @@ namespace Lab8
 
             Student student;
             bool success = studentInfo.TryGetValue(userInput, out student);
-            // for debugging            Console.WriteLine(success);
+           
             if (success)
             {
                 Console.Write($"Student {userInput} is {student.Name}. What would you like to know about {student.Name}? (enter favorite food or city of residence): ");
