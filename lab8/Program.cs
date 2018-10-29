@@ -80,7 +80,7 @@ namespace Lab8
                     }
                     else if (nextQuestion == "city of residence")
                     {
-                        Console.WriteLine($"{student.Name} lives in {student.FavoriteFood}.");
+                        Console.WriteLine($"{student.Name} lives in {student.city}.");
                     }
 
                     break;
@@ -124,7 +124,7 @@ namespace Lab8
                 get { return name; }
             }
 
-            public string FavoriteTeam
+            public string city
             {
                 get { return this.City; }
             }
